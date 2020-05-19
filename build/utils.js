@@ -4,10 +4,13 @@ const config = require('../config')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const packageConfig = require('../package.json')
 
+<<<<<<< HEAD
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
+=======
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
     ? config.build.assetsSubDirectory
@@ -34,7 +37,11 @@ exports.cssLoaders = function (options) {
   }
 
   // generate loader string to be used with extract text plugin
+<<<<<<< HEAD
   function generateLoaders(loader, loaderOptions) {
+=======
+  function generateLoaders (loader, loaderOptions) {
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
     const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
 
     if (loader) {
@@ -58,6 +65,7 @@ exports.cssLoaders = function (options) {
     }
   }
 
+<<<<<<< HEAD
   const syleusObject = {
     import: [
       '~nib/lib/nib/vendor',
@@ -69,6 +77,8 @@ exports.cssLoaders = function (options) {
     ]
   };
 
+=======
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
@@ -76,8 +86,13 @@ exports.cssLoaders = function (options) {
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
+<<<<<<< HEAD
     stylus: generateLoaders('stylus', syleusObject),
     styl: generateLoaders('stylus', syleusObject)
+=======
+    stylus: generateLoaders('stylus'),
+    styl: generateLoaders('stylus')
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
   }
 }
 

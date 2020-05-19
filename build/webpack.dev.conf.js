@@ -4,10 +4,16 @@ const webpack = require('webpack')
 const config = require('../config')
 const merge = require('webpack-merge')
 const path = require('path')
+<<<<<<< HEAD
 process.env.RUN_MODEL = "dev"
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
+=======
+const baseWebpackConfig = require('./webpack.base.conf')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
@@ -52,6 +58,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
     new webpack.NoEmitOnErrorsPlugin(),
+<<<<<<< HEAD
     
     /*MARK:单页*/
     // new HtmlWebpackPlugin({
@@ -60,6 +67,15 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     //   inject: true
     // }),
     
+=======
+    // https://github.com/ampedandwired/html-webpack-plugin
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'index.html',
+      inject: true
+    }),
+    // copy custom static assets
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../static'),
@@ -87,8 +103,13 @@ module.exports = new Promise((resolve, reject) => {
           messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`],
         },
         onErrors: config.dev.notifyOnErrors
+<<<<<<< HEAD
           ? utils.createNotifierCallback()
           : undefined
+=======
+        ? utils.createNotifierCallback()
+        : undefined
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
       }))
 
       resolve(devWebpackConfig)

@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+<<<<<<< HEAD
 const TestWebpackPlugin = require('../plugins/test-webpack-plugin')
 const TestLoader = path.resolve(__dirname, '../loaders/test-loader.js')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
@@ -27,6 +28,11 @@ const autoWebPlugin = new AutoWebPlugin('src/pages', {
 
 function resolve (dir) {
   return path.join(__dirname, '../', dir)
+=======
+
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 }
 
 const createLintingRule = () => ({
@@ -41,6 +47,7 @@ const createLintingRule = () => ({
 })
 
 module.exports = {
+<<<<<<< HEAD
   externals: {
     'vue': 'Vue',
     'vue-router': 'VueRouter',
@@ -70,6 +77,12 @@ module.exports = {
       append: false
     })
   ],
+=======
+  context: path.resolve(__dirname, '../'),
+  entry: {
+    app: './src/main.js'
+  },
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -81,8 +94,12 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
+<<<<<<< HEAD
       '@mandmobile': path.resolve(__dirname, '../src/components') // '../../components'//MARK:文件路径:组件源码引入
       // '@vant': path.resolve(__dirname, '../src/components') // '../../components'//MARK:文件路径:组件源码引入
+=======
+      '@': resolve('src'),
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
     }
   },
   module: {
@@ -95,6 +112,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+<<<<<<< HEAD
         use: [{
           loader: 'babel-loader'
         }, {
@@ -110,6 +128,10 @@ module.exports = {
           // resolve('test'),
           // resolve('node_modules/webpack-dev-server/client')
         ]
+=======
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

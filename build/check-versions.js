@@ -4,7 +4,11 @@ const semver = require('semver')
 const packageConfig = require('../package.json')
 const shell = require('shelljs')
 
+<<<<<<< HEAD
 function exec(cmd) {
+=======
+function exec (cmd) {
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
   return require('child_process').execSync(cmd).toString().trim()
 }
 

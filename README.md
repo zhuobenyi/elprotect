@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # webproject
 
 > A Vue.js Project for Mand Mobile
+=======
+# elproject
+
+> A Vue.js project
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 
 ## Build Setup
 
@@ -16,6 +22,7 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
+<<<<<<< HEAD
 
 # run unit tests
 npm run unit
@@ -26,3 +33,8 @@ npm run e2e
 # run all tests
 npm test
 ```
+=======
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31

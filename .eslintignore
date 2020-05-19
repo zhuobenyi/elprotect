@@ -2,4 +2,7 @@
 /config/
 /dist/
 /*.js
+<<<<<<< HEAD
 /test/unit/coverage/
+=======
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31

@@ -4,14 +4,21 @@ const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
 const merge = require('webpack-merge')
+<<<<<<< HEAD
 process.env.RUN_MODEL = "prod"
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
+=======
+const baseWebpackConfig = require('./webpack.base.conf')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
+<<<<<<< HEAD
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : require('../config/prod.env')
@@ -19,6 +26,9 @@ const env = process.env.NODE_ENV === 'testing'
 // console.log("-----------baseWebpackConfig.output-----------");
 // console.log(JSON.stringify(baseWebpackConfig.output,null,4));
 // console.log("-----------baseWebpackConfig.output-----------");
+=======
+const env = require('../config/prod.env')
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -30,7 +40,11 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
+<<<<<<< HEAD
     path: process.env.FILE_PATH,
+=======
+    path: config.build.assetsRoot,
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
@@ -64,6 +78,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ? { safe: true, map: { inline: false } }
         : { safe: true }
     }),
+<<<<<<< HEAD
     
     /*MARK:单页*/
     // new HtmlWebpackPlugin({
@@ -111,6 +126,58 @@ const webpackConfig = merge(baseWebpackConfig, {
     //   children: true,
     //   minChunks: 3
     // }),
+=======
+    // generate dist index.html with correct asset hash for caching.
+    // you can customize output by editing /index.html
+    // see https://github.com/ampedandwired/html-webpack-plugin
+    new HtmlWebpackPlugin({
+      filename: config.build.index,
+      template: 'index.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+      },
+      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+      chunksSortMode: 'dependency'
+    }),
+    // keep module.id stable when vendor modules does not change
+    new webpack.HashedModuleIdsPlugin(),
+    // enable scope hoisting
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    // split vendor js into its own file
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks (module) {
+        // any required modules inside node_modules are extracted to vendor
+        return (
+          module.resource &&
+          /\.js$/.test(module.resource) &&
+          module.resource.indexOf(
+            path.join(__dirname, '../node_modules')
+          ) === 0
+        )
+      }
+    }),
+    // extract webpack runtime and module manifest to its own file in order to
+    // prevent vendor hash from being updated whenever app bundle is updated
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'manifest',
+      minChunks: Infinity
+    }),
+    // This instance extracts shared chunks from code splitted chunks and bundles them
+    // in a separate chunk, similar to the vendor chunk
+    // see: https://webpack.js.org/plugins/commons-chunk-plugin/#extra-async-commons-chunk
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'app',
+      async: 'vendor-async',
+      children: true,
+      minChunks: 3
+    }),
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 
     // copy custom static assets
     new CopyWebpackPlugin([

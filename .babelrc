@@ -8,6 +8,7 @@
     }],
     "stage-2"
   ],
+<<<<<<< HEAD
   "plugins": [
     "transform-vue-jsx",
     "transform-decorators-legacy",
@@ -27,4 +28,7 @@
         "transform-vue-jsx","transform-decorators-legacy", "transform-es2015-modules-commonjs", "dynamic-import-node"]
     }
   }
+=======
+  "plugins": ["transform-vue-jsx", "transform-runtime"]
+>>>>>>> cd904d1ea0c05964b0355caca4519ea81e958e31
 }
