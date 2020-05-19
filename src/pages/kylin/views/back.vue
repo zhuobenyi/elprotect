@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script>    
 import { Component, Vue } from "vue-property-decorator";
 import Button from "@mandmobile/button"; //MARK:文件路径:使用源码版本组件
 import Toast from "@mandmobile/toast"; //MARK:文件路径:使用源码版本组件
