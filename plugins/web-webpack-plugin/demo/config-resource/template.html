@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<script src="inline?_inline"></script>
+	<script src="ie-polyfill?_ie"></script>
+</head>
+<body>
+<script src="dev?_dev"></script>
+<!--只在生产环境下注入谷歌分析-->
+<!--load a local google analyze file direct without local var webpack-->
+<script async src="./google-analytics.js?_dist"></script>
+</body>
+</html>

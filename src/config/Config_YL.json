@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "componentsExample": {
+      "pack": "3",
+      "login": true,
+      "name": "首页",
+      "title": "标题"
+    },
+    "heatEGold": {
+      "pack": "3",
+      "login": true,
+      "name": "心e金",
+      "title": "登录"
+    },
+    "kylin": {
+      "pack": "3",
+      "login": true,
+      "name": "心e金",
+      "title": "登录设置"
+    },
+    "addUpdate": {
+      "pack": "3",
+      "login": true,
+      "name": "心e金",
+      "title": "设置密码"
+    }
+  },
+  "_pages_": {},
+  "packinfo": {
+    "3": {
+      "packid": "00000003",
+      "packname": "组件库"
+    }
+  }
+}

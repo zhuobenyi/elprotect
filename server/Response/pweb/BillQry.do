@@ -1,0 +1,32 @@
+{
+
+"BillList":
+        [
+            {
+                "Extend":"{}",
+                "Amount":"20.00",
+                "billKey":"25803691472",
+                "CompanyId":null,
+                "BillFines":"0.10",
+                "ChargeoffInst":"BJCEB",
+                "OutId":null,
+                "OrderType":"JF",
+                "BillUserName":"*汪汪",
+                "SubOrderType":"WATER",
+                "BillDate":"201303",
+                "ChargeInst":"LIAONINGSHENYANGWATER",
+                "Balance":"0.00"
+            }
+        ]
+    ,
+        "billKey":"25803691472",
+        "AccessToken":"201405BB9b4bb9763ab341d7a80adaf3646690fa",
+        "OrderType":"JF",
+        "SubOrderType":"WATER",
+        "_RejCode":"000000",
+        "ChargeoffInst":"BJCEB",
+        "ChargeInst":"LIAONINGSHENYANGWATER",
+        "_UserId":"13132645611",
+        "UserSeq":"8973",
+        "CacheKey":"utility_d7494a2ef4c4159087e568b35789a5c0"
+}

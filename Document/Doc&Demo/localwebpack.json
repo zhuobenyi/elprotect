@@ -1,0 +1,648 @@
+{
+    "externals": {
+        "vue": "Vue",
+        "vue-router": "VueRouter",
+        "vuex": "Vuex",
+        "axios": "axios",
+        "fastclick": "FastClick"
+    },
+    "context": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject",
+    "entry": {
+        "componentsExample": [
+            "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/componentsExample"
+        ],
+        "kylin": [
+            "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/kylin"
+        ],
+        "main": [
+            "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/main"
+        ]
+    },
+    "plugins": [
+        {},
+        {
+            "options": {
+                "template": "./src/template.html",
+                "postEntrys": [],
+                "commonsChunk": {
+                    "name": "common",
+                    "minChunks": 2
+                }
+            },
+            "entryMap": {
+                "componentsExample": {
+                    "templatePath": "./src/template.html",
+                    "entryPath": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/componentsExample",
+                    "htmlOutputFilename": "componentsExample"
+                },
+                "kylin": {
+                    "templatePath": "./src/template.html",
+                    "entryPath": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/kylin",
+                    "htmlOutputFilename": "kylin"
+                },
+                "main": {
+                    "templatePath": "./src/template.html",
+                    "entryPath": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/main",
+                    "htmlOutputFilename": "main"
+                }
+            },
+            "webpackEntry": {
+                "componentsExample": [
+                    "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/componentsExample"
+                ],
+                "kylin": [
+                    "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/kylin"
+                ],
+                "main": [
+                    "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/pages/main"
+                ]
+            }
+        },
+        {
+            "options": {
+                "append": false,
+                "prependExternals": true,
+                "useHash": false,
+                "usePublicPath": false,
+                "jsExtensions": [
+                    ".js"
+                ],
+                "cssExtensions": [
+                    ".css"
+                ],
+                "tags": [
+                    "http://127.0.0.1:8808/lib/public.js"
+                ],
+                "links": [],
+                "scripts": [
+                    {
+                        "path": "http://127.0.0.1:8808/lib/public.js"
+                    }
+                ],
+                "linksPrepend": [],
+                "linksAppend": [],
+                "scriptsPrepend": [
+                    {
+                        "path": "http://127.0.0.1:8808/lib/public.js"
+                    }
+                ],
+                "scriptsAppend": [],
+                "htmlPluginName": "html-webpack-plugin"
+            }
+        },
+        {
+            "definitions": {
+                "process.env": {
+                    "NODE_ENV": "\"production\""
+                }
+            }
+        },
+        {
+            "options": {
+                "test": {},
+                "extractComments": false,
+                "sourceMap": false,
+                "cache": false,
+                "parallel": true,
+                "uglifyOptions": {
+                    "compress": {
+                        "warnings": false
+                    },
+                    "output": {
+                        "comments": {}
+                    }
+                }
+            }
+        },
+        {
+            "filename": "static/css/[name].[contenthash].css",
+            "id": 1,
+            "options": {
+                "allChunks": true
+            }
+        },
+        {
+            "options": {
+                "cssProcessorOptions": {
+                    "safe": true
+                },
+                "assetNameRegExp": {},
+                "canPrint": true
+            },
+            "lastCallInstance": {
+                "options": {
+                    "assetProcessors": [
+                        {
+                            "phase": "compilation.optimize-chunk-assets",
+                            "regExp": {}
+                        }
+                    ],
+                    "canPrint": true
+                },
+                "deleteAssetsMap": {}
+            }
+        },
+        {}
+    ],
+    "output": {
+        "path": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/dist",
+        "filename": "static/js/[name].[chunkhash].js",
+        "publicPath": "",
+        "chunkFilename": "static/js/[id].[chunkhash].js"
+    },
+    "resolve": {
+        "extensions": [
+            ".js",
+            ".vue",
+            ".json"
+        ],
+        "alias": {
+            "vue$": "vue/dist/vue.esm.js",
+            "@mandmobile": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components"
+        }
+    },
+    "module": {
+        "rules": [
+            {
+                "test": {},
+                "loader": "vue-loader",
+                "options": {
+                    "loaders": {
+                        "css": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "postcss": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "less": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "less-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "sass": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "indentedSyntax": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "scss": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "stylus": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "import": [
+                                        "~nib/lib/nib/vendor",
+                                        "~nib/lib/nib/gradients.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/util.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.components.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.basic.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/styles/theme.styl"
+                                    ],
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "styl": [
+                            {
+                                "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "import": [
+                                        "~nib/lib/nib/vendor",
+                                        "~nib/lib/nib/gradients.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/util.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.components.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.basic.styl",
+                                        "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/styles/theme.styl"
+                                    ],
+                                    "sourceMap": false
+                                }
+                            }
+                        ]
+                    },
+                    "cssSourceMap": false,
+                    "cacheBusting": true,
+                    "transformToRequire": {
+                        "video": [
+                            "src",
+                            "poster"
+                        ],
+                        "source": "src",
+                        "img": "src",
+                        "image": "xlink:href"
+                    }
+                }
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "babel-loader"
+                    },
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/loaders/test-loader.js",
+                        "options": {
+                            "output": "info"
+                        }
+                    }
+                ],
+                "include": [
+                    "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src",
+                    "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/test",
+                    "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/webpack-dev-server/client"
+                ]
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/img/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/media/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/fonts/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "less-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "indentedSyntax": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "import": [
+                                "~nib/lib/nib/vendor",
+                                "~nib/lib/nib/gradients.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/util.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.components.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.basic.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/styles/theme.styl"
+                            ],
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "postcss-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "import": [
+                                "~nib/lib/nib/vendor",
+                                "~nib/lib/nib/gradients.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/util.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.components.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/components/_style/mixin/theme.basic.styl",
+                                "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webproject/src/styles/theme.styl"
+                            ],
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "node": {
+        "setImmediate": false,
+        "dgram": "empty",
+        "fs": "empty",
+        "net": "empty",
+        "tls": "empty",
+        "child_process": "empty"
+    },
+    "devtool": false
+}

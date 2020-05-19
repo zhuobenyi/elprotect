@@ -1,0 +1,53 @@
+{
+  "pages": {
+    "componentsExample": {
+      "pack": "1",
+      "login": true,
+      "name": "首页",
+      "title": "标题"
+    },
+    "heatEGold": {
+      "pack": "2",
+      "login": true,
+      "name": "心e金",
+      "title": "心e金"
+    },
+    "password": {
+      "pack": "3",
+      "login": true,
+      "name": "心e金交易密码",
+      "title": "设置交易密码"
+    },
+    "QryAcct": {
+      "pack": "3",
+      "login": true,
+      "name": "查询心e金账户",
+      "title": "心e金"
+    },
+    "kylin": {
+      "pack": "4",
+      "login": true,
+      "name": "实例代码",
+      "title": "实例"
+    },
+    "main": {
+      "pack": "5",
+      "login": true,
+      "name": "main",
+      "title": "实例"
+    },
+    "MypagePage": {
+      "pack": "6",
+      "login": false,
+      "name": "main",
+      "title": "text"
+    }
+  },
+  "_pages_": {},
+  "packinfo": {
+    "1": {
+      "packid": "00000001",
+      "packname": "组件库"
+    }
+  }
+}

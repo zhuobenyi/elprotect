@@ -1,0 +1,37 @@
+{
+  "pages": {
+    "main": {
+      "pack": "1",
+      "login": true,
+      "name": "首页",
+      "title": "标题"
+    },
+    "kylin": {
+      "pack": "2",
+      "login": true,
+      "name": "首页",
+      "title": "标题"
+    },
+    "componentsExampleSS": {
+      "pack": "3",
+      "login": true,
+      "name": "首页",
+      "title": "标题"
+    }
+  },
+  "_pages_": {},
+  "packinfo": {
+    "1": {
+      "packid": "00000001",
+      "packname": "账户管理"
+    },
+    "2": {
+      "packid": "00000002",
+      "packname": "业务包"
+    },
+    "3": {
+      "packid": "00000003",
+      "packname": "组件库"
+    }
+  }
+}

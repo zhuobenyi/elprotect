@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "build",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "builddebug"],
+      "port": 9229
+    },
+    { 
+      "type": "node",
+      "request": "launch",
+      "name": "initconfig",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "initconfigdebug"],
+      "port": 9229
+    },
+    { 
+      "type": "node",
+      "request": "launch",
+      "name": "buildall",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "buildalldebug"],
+      "port": 9229
+    }
+  ]
+}

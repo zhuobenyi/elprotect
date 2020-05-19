@@ -1,0 +1,30 @@
+{
+    "options": {
+        "template": "./src/template.html",
+        "postEntrys": [],
+        "commonsChunk": {
+            "name": "common",
+            "minChunks": 2
+        }
+    },
+    "entryMap": {
+        "kylin": {
+            "templatePath": "./src/template.html",
+            "entryPath": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webprojectedit/src/pages/kylin",
+            "htmlOutputFilename": "kylin"
+        },
+        "main": {
+            "templatePath": "./src/template.html",
+            "entryPath": "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webprojectedit/src/pages/main",
+            "htmlOutputFilename": "main"
+        }
+    },
+    "webpackEntry": {
+        "kylin": [
+            "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webprojectedit/src/pages/kylin"
+        ],
+        "main": [
+            "/Users/liuwang/Documents/workspace/GitProject/CSIIFramework/Web/webprojectedit/src/pages/main"
+        ]
+    }
+}
